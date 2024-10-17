@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapbox GL JS with Zipped Shapefiles</title>
+  
+  <!-- Mapbox GL JS CSS -->
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <link href="assets/style.css" rel="stylesheet"/>
+  
+</head>
+<body>
+  <div class="ui-container">
+    
+    <!-- Control container for logo, title, and mapbox controls -->
+    <div class="control-container">
+      <div class="overlay">
+        <img src="https://mebaars.github.io/GIS2005_lab3/groceries.svg" alt="Logo">
+        <h1>Groceries Stores Across Denver, Colorado</h1>
+      </div>
+      <div class="mapbox-controls"></div>
+    </div>
+    <!-- The map container -->
+    <div id="map"></div>
+    <!-- Footer at the bottom -->
+    <div class="footer">
+      <p>Footer Content Here</p>
+    </div>
+  </div>
+  <!-- Mapbox GL JS -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  
+  <!-- shp.js from a reliable CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/shpjs@3.4.1/dist/shp.min.js"></script>
+
+  <script src="assets/script.js"></script>
+
+</body>
+</html>
+
