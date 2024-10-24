@@ -5,38 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mapbox GL JS with Zipped Shapefiles</title>
   
-  <!-- Mapbox GL JS CSS -->
   <link href="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.css" rel="stylesheet">
+  <link href="assets/style.css" rel="stylesheet"/>
+  <link href='assets/maplibre-gl-legend.css' rel='stylesheet' />
   <script src="https://api.mapbox.com/mapbox-gl-js/v3.7.0/mapbox-gl.js"></script>
-  <link href="style.css" rel="stylesheet"/>
-  
 </head>
+
 <body>
   <div class="ui-container">
-    
-    <!-- Control container for logo, title, and mapbox controls -->
-    <div class="control-container">
-      <div class="overlay">
+    <div class="header">
+      <div class="title">
         <img src="https://mebaars.github.io/GIS2005_lab3/groceries.svg" alt="Logo">
         <h1>Groceries Stores Across Denver, Colorado</h1>
       </div>
-      <div class="mapbox-controls"></div>
+      <div class="credit">
+        <p>Mike Baars<br>
+          GIS 2005<br>
+          Lab 3 Part 2<br>
+          10/24/24<br>
+        </p>
+      </div>
     </div>
     <!-- The map container -->
     <div id="map"></div>
+    <div class="ui-control-container">
+      <div id="layers">
+        <h2>Layer Controls</h2>
+        <div class="menu"></div>
+      </div>
+      <h2>Legend</h2>
+    </div>
     <!-- Footer at the bottom -->
     <div class="footer">
-      <p>Footer Content Here</p>
+      <p>Using Mapbox, this webpage is a demonstration for GIS2005 that implements several concepts including the use of flexbox, grid layout, and basic UI component design.</p>
     </div>
   </div>
-  <!-- Mapbox GL JS -->
-  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
-  
-  <!-- shp.js from a reliable CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/shpjs@3.4.1/dist/shp.min.js"></script>
 
-  <script src="script.js"></script>
+  <script src="https://watergis.github.io/mapbox-gl-legend/mapbox-gl-legend.js"></script>
+  <script src="https://www.unpkg.com/@watergis/maplibre-gl-legend@latest/dist/maplibre-gl-legend.umd.js"></script>
+  <script src="assets/script.js"></script>
 
 </body>
 </html>
+
 
