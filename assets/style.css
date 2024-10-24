@@ -1,0 +1,220 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+p {
+  line-height: 25px;
+}
+
+.ui-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+#map {
+  grid-column: 4 / 13;
+  grid-row: 2;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 0;
+}
+
+.header {
+  background-color: rgba(245, 245, 220, 0.8);
+  grid-column: 1 / 13;
+  grid-row: 1;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  border-bottom: 2px solid black;
+  margin: 0;
+}
+
+.title {
+  background-color: #DEA299;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.title img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 36px;
+  color: black;
+}
+
+.credit {
+
+  margin-left: auto;
+  padding-right: 10px;
+}
+.credit p {
+  color: black;
+  font-size: 18px;
+  font-family: inherit;
+}
+
+
+.mapbox-controls {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.ui-control-container {
+  background-color: #402B54;
+  grid-column: 1 / 4;
+  grid-row: 2;
+  padding: 15px;
+  width: 100%; /* Full width of the parent container */
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #FFF0DB;
+  color: black;
+  grid-column: 1 / 13;
+  grid-row: 3;
+  display: flex;
+  padding-left: 15px;
+  justify-content: left;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.mapboxgl-legend-list {
+  background-color: #FFF0DB;
+  display: flex;
+  flex-direction: row; /* Align legend items horizontally */
+  justify-content: space-around; /* Spread items evenly */
+  padding: 5px;
+  border-radius: 5px;
+  width: 100%; /* Ensure it fills the container width */
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.layers {
+  background-color: rgba(255, 255, 255, 0.9);
+  display: flex;
+  flex-direction: row; /* Align legend items horizontally */
+  justify-content: space-around; /* Spread items evenly */
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%; /* Ensure it fills the container width */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.mapboxgl-ctrl.mapboxgl-ctrl-group{
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #A598B1;
+}
+
+
+.mapboxgl-legend-onlyRendered-label {
+  display: none;
+}
+
+.mapboxgl-legend-onlyRendered-checkbox {
+  display: none;
+}
+
+/* Set the width of the second column */
+td:nth-child(2), th:nth-child(2) {
+  padding: 10%;
+  width: 50px; /* Adjust this value to resize the column */
+}
+
+td.legend-table-td:nth-child(3) {
+  padding-left: 15%;
+  text-align: left;
+  
+}
+
+td img {
+  height: 50px !important; /* Set the desired width for the image */
+}
+
+
+
+.legend-table tr {
+  height: 40px;
+  font-size: 16px;
+}
+
+.mapboxgl-legend-list {
+  padding: 10px;
+}
+
+.menu {
+  background: #fff;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  border-radius: 3px;
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  font-family: 'Open Sans', sans-serif;
+  }
+
+h2 {
+  color: white;
+}
+
+.menu a {
+  font-size: 16px;
+  color: #404040;
+  display: block;
+  margin: 0;
+  padding: 0;
+  padding: 10px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+  
+  #menu a:last-child {
+  border: none;
+  }
+  
+  .menu a:hover {
+  background-color: #f8f8f8;
+  color: #404040;
+  }
+  
+  .menu a.active {
+  background-color: #3887be;
+  color: #ffffff;
+  }
+  
+  .menu a.active:hover {
+  background: #3074a4;
+  }
